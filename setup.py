@@ -6,12 +6,11 @@ setup(
     packages = find_packages(),
     include_package_data=True,
     install_requires=[
-        'Click==6.6'
-        # other libs go here
+        'Click==6.6',
     ],
-    entry_points = {
-        'console_scripts': [
-            'pycli = pycli.__main__:main'
-            'quicktest = pycli.tests.quicktest:quicktest'
-        ]
-    })
+    entry_points='''
+        [console_scripts]
+        pycli = pycli.__main__:main_cli
+        quicktest_pycli = pycli.tests.quicktest:quicktest_cli
+    ''',
+)

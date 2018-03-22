@@ -6,6 +6,8 @@
 simple test queries [for DEVELOPMENT  / not part of official tests]
 """
 
+import click 
+
 from .. import *
 from ..classmodule import MyClass
 from ..funcmodule import my_function
@@ -13,7 +15,7 @@ from ..funcmodule import my_function
 
 @click.command()
 @click.argument('test_number')
-def quicktest(test_number=1):
+def quicktest_cli(test_number=1):
 
     test_number = int(test_number)
 
