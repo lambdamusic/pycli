@@ -5,12 +5,13 @@
 # prerequisites: chmod u+x run-tests.sh
 
 clear
+cd ..
 
 echo "=================="
 echo "CALLING [test_one] in 1 second..."
 echo "=================="
 sleep 1
-python -m pycli.tests.test_one
+python -m cliapp.tests.test_one
 sleep 2
 
 clear 

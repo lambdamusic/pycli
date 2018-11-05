@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = 'pycli',
+    name = 'cliapp',
     version = '0.1.0',
     packages = find_packages(),
     include_package_data=True,
@@ -10,7 +10,7 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        pycli = pycli.__main__:main_cli
-        quicktest_pycli = pycli.tests.quicktest:quicktest_cli
+        cliapp = cliapp.__main__:main_cli
+        quicktest_cliapp = cliapp.tests.quicktest:quicktest_cli
     ''',
 )

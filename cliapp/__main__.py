@@ -11,7 +11,7 @@ from .funcmodule import my_function
 
 
 CMD_LINE_EXAMPLES = """SOME EXAMPLES HERE:
-$ pycli 
+$ cliapp 
  => returns some nice text
 """
 
