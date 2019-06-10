@@ -10,7 +10,7 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        cliapp = cliapp.__main__:main_cli
+        cliapp = cliapp.cli:main_cli
         quicktest_cliapp = cliapp.tests.quicktest:quicktest_cli
     ''',
 )

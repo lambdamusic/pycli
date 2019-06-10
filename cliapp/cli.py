@@ -4,14 +4,12 @@
 import sys
 import click
 
-from .classmodule import MyClass
-from .funcmodule import my_function
-
+from .mymodule import MyClass
 
 
 
 CMD_LINE_EXAMPLES = """SOME EXAMPLES HERE:
-$ cliapp 
+$ cliapp
  => returns some nice text
 """
 
@@ -33,14 +31,11 @@ def main_cli(ctx, args=None, examples=False):
         # print dir(search_cli)
         click.echo(ctx.get_help())
         return
- 
+
     for arg in args:
         print('passed argument :: {}'.format(arg))
-
-    my_function('hello world')
-
-    my_object = MyClass('Thomas')
-    my_object.say_name()
+        my_object = MyClass(arg)
+        my_object.say_name()
 
 
 if __name__ == '__main__':

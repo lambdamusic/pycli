@@ -1,18 +1,17 @@
 # !/usr/bin/env python
 #  -*- coding: UTF-8 -*-
 """
-Unit test stub 
+Unit test stub
 """
 
 from __future__ import print_function
-
 import unittest, os, sys, click
 
 
 class TestOne(unittest.TestCase):
 
     """
-    Tests  
+    Tests
     """
 
     click.secho("**TEST**", fg='red')
