@@ -46,7 +46,7 @@ setup(
     install_requires=REQUIREMENTS_DATA,
     entry_points='''
         [console_scripts]
-        cliapp = cliapp.cli:main_cli
+        cliapp = cliapp.main_cli:main_cli
         quicktest_cliapp = cliapp.tests.quicktest:quicktest_cli
     ''',
 )

@@ -4,7 +4,7 @@
 import sys
 import click
 
-from .mymodule import MyClass
+from .core.mymodule import MyClass
 
 
 
