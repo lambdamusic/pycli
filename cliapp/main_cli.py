@@ -2,11 +2,12 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import os
 import click
 
 from .core.mymodule import MyClass
 
-
+HERE = os.path.abspath(os.path.dirname(__file__))
 
 CMD_LINE_EXAMPLES = """SOME EXAMPLES HERE:
 $ cliapp
